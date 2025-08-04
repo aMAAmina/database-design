@@ -20,9 +20,6 @@ Table:Movie
 Table:Watch-history
 - watch_id (PK- (user_id, movie_watched_id))
 - watched_date
-- user_id (FK - User)
-- movie_watched_id (FK - Movie)
-
 
 Table:Rating
 - rating_id (PK)
