@@ -25,13 +25,10 @@ Table: User
 - last_name
 - location
 - user_type_id (FK - User_type)
-- event_registerd_id (FK - Event)
-- event_wish_list_id (FK - Event)
 
 Table: User_type
 - user_type_id
-- organiser
-- guest
+- user_type_name
 
 Table: Event
 - event_id (PK)
@@ -44,6 +41,9 @@ Table: Event_registration_history
 - (user_id,event_id) (PK)
 - went
 
+Table: Event_wish_list:
+- (user_id, event_id) (PK)
+
 Table : Tag
 - tag_id (PK)
 - tag_name
@@ -53,5 +53,7 @@ Table : Tag
 
 ### Reflection:
 - What normalization challenges did you face?
+  - 1NF wasnt verified with `User_type` table (used to have organiser, guest as fields)
+  - 2NF wasnt verified with `User` table (used to have 2 FK for events, resolved by adding `Event_registration_history` and `Event_wish_list` tables)
 - How would your schema evolve for multi-city support?
   Adding a table location: link it as an FK to user with details such as city, country...
