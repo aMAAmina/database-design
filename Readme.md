@@ -4,3 +4,4 @@
 - [schema-architecture-decision](schema-architecture-decision) : schema types
 - [er_diag_to_normalized_tab](er_diag_to_normalized_tab) : From ER Diagram to Normalized Tables
 - [best-practices](best-practices) : Best Practices, Naming Conventions, and Security
+- [capstone-challenge](capstone-challenge)
