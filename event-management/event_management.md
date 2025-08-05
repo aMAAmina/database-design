@@ -24,12 +24,7 @@ Table: User
 - first_name
 - last_name
 - location
-- user_type_id (FK - User_type)
-
-Table: User_type
-- user_type_id
-- user_type_name
-
+  
 Table: Event
 - event_id (PK)
 - event_name
@@ -38,11 +33,9 @@ Table: Event
 - event_tag (FK - tag)
 
 Table: Event_registration_history
-- (user_id,event_id) (PK)
-- went
-
-Table: Event_wish_list:
 - (user_id, event_id) (PK)
+- permission
+- went
 
 Table : Tag
 - tag_id (PK)
